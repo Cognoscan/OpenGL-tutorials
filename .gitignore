@@ -11,3 +11,7 @@
 *.lai
 *.la
 *.a
+
+# Visual Studio Shenanigans
+x64/
+*.vcproj*
