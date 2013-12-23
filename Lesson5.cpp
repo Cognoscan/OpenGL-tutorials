@@ -49,7 +49,7 @@ int Lesson5::Render()
 	GLfloat x = 0.0f;
 	GLfloat y = 0.0f;
 
-	checkerboard_texture_.render( x, y);
+	checkerboard_texture_.render( x, y, NULL );
 
 	return 0;
 }
@@ -89,7 +89,7 @@ int Lesson5::LoadMedia()
 		checkerboard,
 		CHECKERBOARD_WIDTH,
 		CHECKERBOARD_HEIGHT );*/
-	GLenum error = checkerboard_texture_.LoadTextureFromFile("C:\\Users\\Richard.s.teal\\Documents\\Visual Studio 2008\\Projects\\sdl_test2\\resources\\test.jpg");
+	GLenum error = checkerboard_texture_.LoadTextureFromFile("\\\\blufs0201.goldlnk.rootlnka.net\\nhqede03_usr\\rteal\\windows\\visualstudio\\sdl_test2\\resources\\test.jpg");
 	if (error != GL_NO_ERROR)
 	{
 		SDL_Log("Unable to load checkerboard texture!");

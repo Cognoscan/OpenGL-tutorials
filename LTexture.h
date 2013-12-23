@@ -5,6 +5,8 @@
 #include "SDL/SDL_opengl.h"
 #include "SDL/SDL_image.h"
 
+#include "LFRect.h"
+
 class LTexture
 {
 private:
@@ -17,7 +19,7 @@ public:
 	int LoadTextureFromPixels32( GLuint* pixels, GLuint width, GLuint height );
 	int LoadTextureFromFile( const char *path );
 	void FreeTexture();
-	void render( GLfloat x, GLfloat y );
+	void render( GLfloat x, GLfloat y, LFRect* clip = NULL );
 	GLuint get_texture_id();
 	GLuint get_texture_width();
 	GLuint get_texture_height();
